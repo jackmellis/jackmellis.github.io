@@ -2,86 +2,21 @@
 <html>
   <head>
     <title>Jackieboi Ltd</title>
-    <style>
-      body {
-        background-color: #20211f;
-        color: white;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
       }
-      header {
-        display: flex;
-        justify-content: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid white;
-        margin-left: 8rem;
-        margin-right: 8rem;
-      }
-      ul {
-        list-style: none;
-      }
-      .summary {
-        display: flex;
-        justify-content: center;
-        padding-top: 2rem;
-        text-align: center;
-        font-size: larger;
-      }
-      .summary > ul {
-        width: 75%;
-        display: flex;
-      }
-      .summary > ul > li {
-        width: 33%;
-      }
-      .links {
-        display: flex;
-        justify-content: center;
-        padding-top: 12rem;
-        text-align: center;
-      }
-      .links > ul {
-        width: 75%;
-        display: flex;
-      }
-      .links > ul > li {
-        width: 33%;
-      }
-      a {
-        color: white;
-        transition: all 0.5s;
-      }
-      a:hover {
-        color: cyan;
-      }
-    </style>
+    </script>
   </head>
   <body>
-    <header>
-      <h1>Jackieboi Ltd</h1>
-    </header>
-    <main>
-      <section class="summary">
-        <ul>
-          <li>Web 3</li>
-          <li>Ecommerce</li>
-          <li>Software Architecture</li>
-        </ul>
-      </section>
-      <section class="links">
-        <ul>
-          <li>
-            <a href="https://stop-n-swop.com">Stop N Swop</a>
-          </li>
-          <li>
-            <a href="https://github.com/jackmellis">Github</a>
-          </li>
-          <li>
-            <a href="mailto:contact@jackieboi.org">Contact</a>
-          </li>
-        </ul>
-      </section>
-    </main>
+    <div id="app">
+      <App />
+    </div>
+    <div id="modal" />
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>

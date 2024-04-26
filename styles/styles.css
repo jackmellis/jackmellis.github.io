@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  color: rgb(75, 75, 75);
+  /*background-color: rgb(221, 222, 236);*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: inherit;
+  background-color: inherit;
+}
+.button:hover {
+  color: rgb(120, 148, 250);
+}
+
+.aspect {
+  position: relative;
+}
+.aspect::before {
+  content: "";
+  display: block;
+}
+.aspect > :first-child {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.aspect-16-9::before {
+  padding-bottom: 56.249999993%;
+}
+.aspect-1::before {
+  padding-bottom: 100%;
+}
+.aspect-4-3::before {
+  padding-bottom: 75%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
