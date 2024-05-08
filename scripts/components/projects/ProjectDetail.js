@@ -24,6 +24,7 @@ export default {
       },
       header: {
         fontSize: "3rem",
+        fontWeight: 500,
         display: "flex",
         alignItems: "center",
         gap: "1rem",
@@ -46,16 +47,19 @@ export default {
       },
       subheader: {
         fontWeight: 500,
+        fontSize: "1.5rem",
         borderBottom: "1px solid #ccc",
         paddingBottom: "1rem",
       },
       content: {
         display: "flex",
         gap: "2rem",
-        flexDirection: bp.md ? "row" : "column",
+        flexDirection: bp.lg ? "row" : "column",
       },
       imageWrapper: {
-        width: bp.md ? "75%" : "100%",
+        margin: "auto",
+        width: bp.md ? "50%" : "100%",
+        flexShrink: 0,
         borderRadius: "10px",
         overflow: "hidden",
       },
@@ -69,9 +73,10 @@ export default {
         gap: "1.5rem",
         marginTop: "0.5rem",
         lineHeight: "1.5",
+        fontSize: "1.25rem",
       },
       yearsActive: {
-        fontWeight: 200,
+        fontWeight: 300,
         fontSize: "0.9rem",
       },
     }));

@@ -20,12 +20,7 @@ export default {
       projects,
       styles: computed(() => ({
         root: {
-          // backgroundColor: "#FADE78",
-          // backgroundColor: "#9D78FA",
-          // backgroundColor: "#78D5FA",
-          // backgroundColor: "#94FA78",
-          backgroundColor: "#7894fa",
-          color: "white",
+          backgroundColor: "#78D5FA",
         },
         list: {
           display: "grid",
@@ -41,7 +36,7 @@ export default {
     Project,
   },
   template: `
-<Section :style="styles.root">
+<Section :style="styles.root" :full-height="false">
   <SectionHeader id="projects">Projects & Experience</SectionHeader>
   <ul :style="styles.list">
     <Project v-for="p in projects" v-bind="p"></Project>

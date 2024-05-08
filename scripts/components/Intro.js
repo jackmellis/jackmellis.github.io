@@ -27,15 +27,29 @@ export default {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#78D5FA",
+        position: "relative",
+        overflow: "hidden",
+        backgroundColor: "black",
+      },
+      headerBg: {
+        backgroundColor: "black",
+        position: "absolute",
+        top: "0",
+        left: "0",
+        width: "100%",
+        height: "100%",
+        backgroundImage: 'url("assets/bg.jpg")',
+        backgroundSize: "cover",
+        backgroundPosition: "right",
+        filter: "blur(7px) brightness(0.5)",
       },
       h1: {
         fontSize: "4rem",
-        color: "rgb(41, 41, 41)",
+        color: "rgb(240, 240, 240)",
       },
       h2: {
         fontSize: "0.75rem",
-        color: "rgb(83, 83, 83)",
+        color: "rgb(220, 220, 220)",
         textAlign: "center",
       },
       subheader: {
@@ -57,16 +71,9 @@ export default {
       links: {
         display: "flex",
         justifyContent: "center",
+        alignItems: "center",
         fontSize: "1.5rem",
         gap: "2rem",
-      },
-      contacts: {
-        width: "100%",
-        position: "absolute",
-        display: "flex",
-        justifyContent: "center",
-        gap: "4rem",
-        paddingTop: "50%",
       },
     }));
 
@@ -75,7 +82,8 @@ export default {
   template: `
 <header :style="styles.root">
   <section :style="styles.header">
-    <div>
+    <div :style="styles.headerBg"></div>
+    <div style="position: relative">
       <h1 :style="styles.h1">Hi I'm Jack</h1>
       <div :style="styles.divider"></div>
       <h2 :style="styles.h2">Jackieboi Ltd</h2>
@@ -89,8 +97,6 @@ export default {
     <div :style="styles.links">
       <a href="#projects" class="button">Projects</a>
       <a href="#skills" class="button">Technologies</a>
-    </div>
-    <div :style="styles.contacts">
       <a href="mailto:jack@jackieboi.org">
         <img src="assets/icons/email.svg" alt="Email" style="width: 30px" />
       </a>

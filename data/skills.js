@@ -46,7 +46,7 @@ export default [
   },
   {
     name: "Tailwind CSS",
-    logo: "assets/skills/logos/tailwind_logo.svg",
+    logo: "assets/skills/logos/tailwind.svg",
     url: "https://tailwindcss.com/",
   },
 

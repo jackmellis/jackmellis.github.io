@@ -22,6 +22,7 @@ body {
   font-weight: 600;
   color: inherit;
   background-color: inherit;
+  transition: color 200ms;
 }
 .button:hover {
   color: rgb(120, 148, 250);

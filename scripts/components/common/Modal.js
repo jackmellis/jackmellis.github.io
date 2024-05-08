@@ -42,7 +42,7 @@ export default {
         backgroundColor: "white",
         padding: "2rem",
         borderRadius: "10px",
-        width: "1024px",
+        width: "1280px",
         maxWidth: "100%",
         maxHeight: "100%",
         overflowY: "auto",

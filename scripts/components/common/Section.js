@@ -1,9 +1,17 @@
+import { computed } from "vue";
+
 export default {
-  setup() {
-    return {
-      styles: {
+  props: {
+    fullHeight: {
+      type: Boolean,
+      default: true,
+    },
+  },
+  setup(props) {
+    const styles = computed(() => {
+      return {
         section: {
-          minHeight: "100vh",
+          minHeight: props.fullHeight ? "100vh" : "50vh",
           margin: "auto",
           paddingTop: "4rem",
           paddingLeft: "10%",
@@ -14,7 +22,11 @@ export default {
           maxWidth: "1200px",
           margin: "auto",
         },
-      },
+      };
+    });
+
+    return {
+      styles,
     };
   },
   template: `
