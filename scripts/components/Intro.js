@@ -10,7 +10,7 @@ export default {
         width: "100%",
         display: "flex",
         flexDirection: bp.lg ? "row" : "column",
-        height: "95vh",
+        height: "100vh",
         alignItems: "center",
       },
       divider: {
@@ -21,7 +21,9 @@ export default {
       },
       header: {
         width: bp.lg ? "50%" : "100%",
-        height: bp.lg ? "100%" : "50%",
+        height: bp.lg ? "100%" : bp.md ? "50%" : "auto",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
         flexShrink: "0",
         display: "flex",
         flexDirection: "column",
@@ -46,6 +48,7 @@ export default {
       h1: {
         fontSize: "4rem",
         color: "rgb(240, 240, 240)",
+        textAlign: "center",
       },
       h2: {
         fontSize: "0.75rem",
@@ -60,7 +63,7 @@ export default {
         flexDirection: "column",
         justifyContent: "center",
         position: "relative",
-        maxWidth: "600px",
+        maxWidth: bp.md ? "600px" : "100%",
         margin: "auto",
       },
       description: {
@@ -69,11 +72,18 @@ export default {
         marginBottom: "2rem",
       },
       links: {
-        display: "flex",
+        display: "grid",
+        gridTemplateColumns: "repeat(4, auto)",
         justifyContent: "center",
         alignItems: "center",
         fontSize: "1.5rem",
         gap: "2rem",
+      },
+      navLink: {
+        gridColumn: bp.sm ? "span 1" : bp.sm ? "span 2" : "span 4",
+      },
+      contactLink: {
+        gridColumn: bp.sm ? "span 1" : "span 2",
       },
     }));
 
@@ -95,12 +105,12 @@ export default {
       in various industries
     </p>
     <div :style="styles.links">
-      <a href="#projects" class="button">Projects</a>
-      <a href="#skills" class="button">Technologies</a>
-      <a href="mailto:jack@jackieboi.org">
+      <a href="#projects" class="button" :style="styles.navLink">Projects</a>
+      <a href="#skills" class="button" :style="styles.navLink">Technologies</a>
+      <a href="mailto:jack@jackieboi.org" class="button" :style="styles.contactLink">
         <img src="assets/icons/email.svg" alt="Email" style="width: 30px" />
       </a>
-      <a href="https://www.linkedin.com/in/jack-ellis-9a258b1b8" target="_blank">
+      <a href="https://www.linkedin.com/in/jack-ellis-9a258b1b8" target="_blank" class="button" :style="styles.contactLink">
         <img src="assets/icons/In-Blue-40.png" alt="LinkedIn" style="width: 30px" />
       </a>
     </div>
