@@ -34,8 +34,8 @@ I also rewrote the back-end layer in node.js and set up the supporting infrastru
     url: "https://floor.xyz",
     image: "assets/projects/screens/floordao-screenshot-1.png",
     yearsActive: "2022",
-    description: `FloorDAO is an NFT-Fi platform that aims to increase liquidity in the NFT space.
-  I was brought in to help guide the font-end infrastructure and build out the web app.`,
+    description: `FloorDAO is an NFT-Fi startup that aims to increase liquidity in the NFT space.
+  I was brought in to help guide the front-end infrastructure and build out the web app.`,
     skills: ["ts", "next", "react", "tailwind", "web3", "fp"],
   },
   {
@@ -46,7 +46,7 @@ I also rewrote the back-end layer in node.js and set up the supporting infrastru
     url: "https://yield.nftx.io",
     image: "assets/projects/screens/yield-screenshot-1.png",
     yearsActive: "2022",
-    description: `Yield is another app by NFTX focused on token yield farming.
+    description: `Yield is another new app by NFTX focused on token yield farming.
   I was responsible for building the web app using Next.js, as well as a back-end in node.js.`,
     skills: [
       "ts",
@@ -71,7 +71,7 @@ I also rewrote the back-end layer in node.js and set up the supporting infrastru
     image: "assets/projects/screens/sns-screenshot-1.png",
     yearsActive: "2022",
     description: `Stop N Swop is a marketplace for retro video games.
-  I was responsible for building the front-end using Vue.js, and the back-end in node.js, as well as setting up and managing the infrastructure.`,
+  I was responsible for building the front-end from scratch using Vue.js, and the back-end in node.js, as well as setting up and managing the infrastructure.`,
     skills: [
       "ts",
       "node",
@@ -96,7 +96,7 @@ I also rewrote the back-end layer in node.js and set up the supporting infrastru
     image: "assets/projects/screens/nftx-screenshot-1.png",
     yearsActive: "2021-2023",
     description: `NFTX is a platform that allows users to create and trade NFT index funds.
-I helped build out the front-end of the platform, written with React and Next.js, as well as advise on best practices, artchitecture, and technology choices.
+    I came on board at the early startup stage. I helped build out the front-end of the platform, written with React and Next.js, as well as advise on best practices, artchitecture, and technology choices.
 The app was written in Typescript, Next.js, and TailwindCSS. It also used several Web3 libraries including ethers.js to interact with the blockchain.
 I later returned to help create and maintain a back-end API layer in node.js, as well as a consumable SDK, and all of the underlying infrastructure.`,
     skills: [
@@ -124,7 +124,7 @@ I later returned to help create and maintain a back-end API layer in node.js, as
     url: "https://claimer.com",
     image: "assets/projects/screens/claimer-screenshot-1.png",
     yearsActive: "2021",
-    description: `Claimer is a startup helps businesses claim R&D tax credits through a web app.
+    description: `Claimer is a startup that helps businesses claim R&D tax credits through a web app.
   I joined Claimer as lead front-end developer, building out the web app -  which required a complete rewrite of the codebase.
   The app was built with React, TailwindCSS, React-Query, and Framer Motion.
   I also collaborated on a generic data-collection engine written across typescript and Kotlin.`,
@@ -185,7 +185,7 @@ I later returned to help create and maintain a back-end API layer in node.js, as
     url: "https://itsstonbury.co.uk",
     image: "assets/projects/screens/its-screenshot-1.jpeg",
     yearsActive: "2017",
-    description: `ITS Stonbury is a software company that provides solutions for the water industry.
+    description: `ITS Stonbury is a startup software company that provides solutions for the water industry.
     I led a small team to build out a new web and mobile app using Vue.js and Ionic, with a C# back-end.`,
     skills: [
       "js",
