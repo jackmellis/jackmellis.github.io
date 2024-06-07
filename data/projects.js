@@ -9,7 +9,7 @@ export default [
 After working with NFTX previously, I was brought back to help out the V3 platform.
 This involved building out an entirely new app from scratch, while maintaining the existing platform (and supporting migrations between the two).
 The app was written in Typescript, Next.js, TailwindCSS, Wagmi, and Viem.
-I also rewrote the back-end layer in node.js and set up the supporting infrastructure.`,
+I also rewrote the back-end layer in node.js, using miniservices, redis, and bullmq, and set up the supporting infrastructure.`,
     skills: [
       "ts",
       "node",
@@ -71,7 +71,9 @@ I also rewrote the back-end layer in node.js and set up the supporting infrastru
     image: "assets/projects/screens/sns-screenshot-1.png",
     yearsActive: "2022",
     description: `Stop N Swop is a marketplace for retro video games.
-  I was responsible for building the front-end from scratch using Vue.js, and the back-end in node.js, as well as setting up and managing the infrastructure.`,
+  I was responsible for building the front-end from scratch using Vue.js.
+  I fully built out the back-end in node.js, using microservices and event driven design; leveraging redis and bullmq.
+  I also managed the devops and infrastructure systems.`,
     skills: [
       "ts",
       "node",
