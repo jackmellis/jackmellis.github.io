@@ -13,6 +13,18 @@ export default [
     url: "https://www.typescriptlang.org/",
   },
   {
+    id: "html",
+    name: "HTML5",
+    logo: "assets/skills/logos/html.png",
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    id: "css",
+    name: "CSS3",
+    logo: "assets/skills/logos/css.png",
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
     id: ".net",
     name: ".NET",
     logo: "assets/skills/logos/dotnet.png",
@@ -29,26 +41,6 @@ export default [
     name: "Python",
     logo: "assets/skills/logos/python.png",
     url: "https://www.python.org/",
-  },
-
-  // Frameworks/Runtimes
-  {
-    id: "node",
-    name: "Node.js",
-    logo: "assets/skills/logos/nodejs.svg",
-    url: "https://nodejs.org/",
-  },
-  {
-    id: "next",
-    name: "Next.js",
-    logo: "assets/skills/logos/nextjs.svg",
-    url: "https://nextjs.org/",
-  },
-  {
-    id: "nuxt",
-    name: "Nuxt",
-    logo: "assets/skills/logos/nuxt.svg",
-    url: "https://nuxtjs.org/",
   },
 
   // Libraries
@@ -76,8 +68,70 @@ export default [
     logo: "assets/skills/logos/tailwind.svg",
     url: "https://tailwindcss.com/",
   },
+  {
+    id: "redux",
+    name: "Redux",
+    logo: "assets/skills/logos/redux.png",
+    url: "https://redux.js.org/",
+  },
+
+  // Frameworks/Runtimes
+  {
+    id: "node",
+    name: "Node.js",
+    logo: "assets/skills/logos/nodejs.svg",
+    url: "https://nodejs.org/",
+  },
+  {
+    id: "next",
+    name: "Next.js",
+    logo: "assets/skills/logos/nextjs.svg",
+    url: "https://nextjs.org/",
+  },
+  {
+    id: "nuxt",
+    name: "Nuxt",
+    logo: "assets/skills/logos/nuxt.svg",
+    url: "https://nuxtjs.org/",
+  },
+  {
+    id: "webpack",
+    name: "Webpack",
+    logo: "assets/skills/logos/webpack.png",
+    url: "https://webpack.js.org/",
+  },
+  {
+    id: "babel",
+    name: "Babel",
+    logo: "assets/skills/logos/babel.jpeg",
+    url: "https://babeljs.io/",
+  },
+  {
+    id: "jest",
+    name: "Jest",
+    logo: "assets/skills/logos/jest.png",
+    url: "https://jestjs.io/",
+  },
+  {
+    id: "jasmine",
+    name: "Jasmine Testing Framework",
+    logo: "assets/skills/logos/jasmine.png",
+    url: "https://jasmine.github.io/",
+  },
+  {
+    id: "nunit",
+    name: "NUnit",
+    logo: "assets/skills/logos/nunit.png",
+    url: "https://nunit.org/",
+  },
 
   // Technologies
+  {
+    id: "git",
+    name: "Git",
+    logo: "assets/skills/logos/git.png",
+    url: "https://git-scm.com/",
+  },
   {
     id: "web3",
     name: "Web3",
@@ -121,5 +175,17 @@ export default [
     name: "Object Oriented Programming",
     logo: "assets/skills/logos/oop.png",
     url: "https://en.wikipedia.org/wiki/Object-oriented_programming",
+  },
+  {
+    id: "scrum",
+    name: "Scrum / Agile",
+    logo: "assets/skills/logos/scrum.jpeg",
+    url: "https://www.scrum.org/resources/what-is-scrum",
+  },
+  {
+    id: "os",
+    name: "Open Source",
+    logo: "assets/skills/logos/os.png",
+    url: "https://opensource.com/resources/what-open-source",
   },
 ];

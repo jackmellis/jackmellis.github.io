@@ -5,7 +5,7 @@ export default {
   setup(props) {
     const styles = computed(() => ({
       root: {
-        width: "4rem",
+        // width: "4rem",
       },
       logo: {
         width: "100%",

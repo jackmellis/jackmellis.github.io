@@ -1,15 +1,35 @@
 import { computed } from "vue";
 import Skills from "../../../data/skills.js";
 import ProjectSkill from "./ProjectSkill.js";
+import { useBreakpoints } from "../../hooks/breakpoints.js";
 
 export default {
   props: ["skills"],
   setup(props) {
+    const bp = useBreakpoints();
+
+    const columns = computed(() => {
+      if (bp.xl) {
+        return 18;
+      }
+      if (bp.lg) {
+        return 14;
+      }
+      if (bp.md) {
+        return 10;
+      }
+      if (bp.sm) {
+        return 8;
+      }
+      return 6;
+    });
+
     const styles = computed(() => ({
       root: {
-        display: "flex",
+        display: "grid",
+        gridTemplateColumns: `repeat(${columns.value}, 1fr)`,
         gap: "0.5rem",
-        marginTop: "1rem",
+        marginTop: "2rem",
       },
     }));
 
