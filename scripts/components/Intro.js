@@ -1,9 +1,10 @@
-import { computed, watchEffect } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useBreakpoints } from "../hooks/breakpoints.js";
 
 export default {
   setup() {
     const bp = useBreakpoints();
+    const backgroundImage = ref();
 
     const styles = computed(() => ({
       root: {
@@ -40,7 +41,8 @@ export default {
         left: "0",
         width: "100%",
         height: "100%",
-        backgroundImage: 'url("assets/bg.jpg")',
+        backgroundImage: backgroundImage.value,
+        // backgroundImage: 'url("assets/bg.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "right",
         filter: "blur(7px) brightness(0.5)",
@@ -87,6 +89,10 @@ export default {
       },
     }));
 
+    onMounted(() => {
+      backgroundImage.value = `url("assets/bg.webp")`;
+    });
+
     return { styles };
   },
   template: `
@@ -108,10 +114,10 @@ export default {
       <a href="#projects" class="button" :style="styles.navLink">Projects</a>
       <a href="#skills" class="button" :style="styles.navLink">Technologies</a>
       <a href="mailto:jack@jackieboi.org" class="button" :style="styles.contactLink">
-        <img src="assets/icons/email.svg" alt="Email" style="width: 30px" />
+        <img src="assets/icons/email.svg" alt="Email" style="width: 30px; height: 30px" />
       </a>
       <a href="https://www.linkedin.com/in/jack-ellis-9a258b1b8" target="_blank" class="button" :style="styles.contactLink">
-        <img src="assets/icons/In-Blue-40.png" alt="LinkedIn" style="width: 30px" />
+        <img src="assets/icons/In-Blue-40.png" alt="LinkedIn" style="width: 30px; height: 30px" />
       </a>
     </div>
   </section>

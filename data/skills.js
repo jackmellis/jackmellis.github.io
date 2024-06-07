@@ -103,7 +103,7 @@ export default [
   {
     id: "babel",
     name: "Babel",
-    logo: "assets/skills/logos/babel.jpeg",
+    logo: "assets/skills/logos/babel.webp",
     url: "https://babeljs.io/",
   },
   {
@@ -155,7 +155,7 @@ export default [
   {
     id: "onion",
     name: "Onion Architecture",
-    logo: "assets/skills/logos/onion.jpeg",
+    logo: "assets/skills/logos/onion.webp",
     url: "https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/",
   },
   {
@@ -179,7 +179,7 @@ export default [
   {
     id: "scrum",
     name: "Scrum / Agile",
-    logo: "assets/skills/logos/scrum.jpeg",
+    logo: "assets/skills/logos/scrum.webp",
     url: "https://www.scrum.org/resources/what-is-scrum",
   },
   {
