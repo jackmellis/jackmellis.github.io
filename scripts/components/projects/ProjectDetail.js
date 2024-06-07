@@ -1,6 +1,8 @@
 import { computed } from "vue";
 import ExternalLinkIcon from "../common/ExternalLinkIcon.js";
 import { useBreakpoints } from "../../hooks/breakpoints.js";
+import Skills from "../../../data/skills.js";
+import ProjectSkills from "./ProjectSkills.js";
 
 export default {
   props: [
@@ -11,6 +13,7 @@ export default {
     "description",
     "yearsActive",
     "backgroundColor",
+    "skills",
   ],
   setup(props) {
     const bp = useBreakpoints();
@@ -93,7 +96,7 @@ export default {
 
     return { styles, subheader, lines };
   },
-  components: { ExternalLinkIcon },
+  components: { ExternalLinkIcon, ProjectSkills },
   template: `
 <div :style="styles.root">
   <h2 :style="styles.header">
@@ -116,5 +119,7 @@ export default {
       <p :style="styles.yearsActive">{{yearsActive}}</p>
       <p v-for="line in lines">{{ line }}</p>
     </div>
+  </div>
+  <ProjectSkills :skills="skills"></ProjectSkills>
 </div>`,
 };

@@ -101,7 +101,7 @@ export default {
   </section>
   <section :style="styles.subheader">
     <p :style="styles.description">
-      I'm a software engineer with over 10 years' experience working
+      I'm a full-stack software engineer with over 10 years' experience working
       in various industries
     </p>
     <div :style="styles.links">

@@ -13,8 +13,9 @@ export default {
     "description",
     "image",
     "yearsActive",
+    "skills",
   ],
-  setup() {
+  setup(props) {
     const showModal = ref(false);
 
     const onClick = () => {
