@@ -133,6 +133,18 @@ export default [
     url: "https://git-scm.com/",
   },
   {
+    id: "mongo",
+    name: "MongoDB",
+    logo: "assets/skills/logos/mongo.svg",
+    url: "https://www.mongodb.com/",
+  },
+  {
+    id: "sql",
+    name: "SQL",
+    logo: "assets/skills/logos/sql.png",
+    url: "https://en.wikipedia.org/wiki/SQL",
+  },
+  {
     id: "web3",
     name: "Web3",
     logo: "assets/skills/logos/eth.png",

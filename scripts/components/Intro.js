@@ -74,18 +74,24 @@ export default {
         marginBottom: "2rem",
       },
       links: {
-        display: "grid",
-        gridTemplateColumns: "repeat(4, auto)",
+        display: "flex",
+        flexWrap: "wrap",
+        // display: "grid",
+        // gridTemplateColumns: "repeat(5, auto)",
         justifyContent: "center",
         alignItems: "center",
         fontSize: "1.5rem",
-        gap: "2rem",
+        // gap: "2rem",
       },
       navLink: {
-        gridColumn: bp.sm ? "span 1" : bp.sm ? "span 2" : "span 4",
+        padding: "2rem",
+        width: bp.md ? "50%" : "100%",
+        // gridColumn: bp.sm ? "span 1" : bp.sm ? "span 2" : "span 4",
       },
       contactLink: {
-        gridColumn: bp.sm ? "span 1" : "span 2",
+        padding: "2rem",
+        width: "33.33%",
+        // gridColumn: bp.sm ? "span 1" : "span 2",
       },
     }));
 
@@ -118,6 +124,9 @@ export default {
       </a>
       <a href="https://www.linkedin.com/in/jack-ellis-9a258b1b8" target="_blank" class="button" :style="styles.contactLink">
         <img src="assets/icons/In-Blue-40.png" alt="LinkedIn" style="width: 30px; height: 30px" />
+      </a>
+      <a href="https://github.com/jackmellis" target="_blank" class="button" :style="styles.contactLink">
+        <img src="assets/icons/github.svg" alt="GitHub" style="width: 30px; height: 30px" />
       </a>
     </div>
   </section>
