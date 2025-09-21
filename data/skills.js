@@ -133,6 +133,18 @@ export default [
     url: "https://git-scm.com/",
   },
   {
+    id: "postgres",
+    name: "PostgreSQL",
+    logo: "assets/skills/logos/postgres.png",
+    url: "https://www.postgresql.org/",
+  },
+  {
+    id: "prisma",
+    name: "Prisma",
+    logo: "assets/skills/logos/prisma.png",
+    url: "https://www.prisma.io/",
+  },
+  {
     id: "mongo",
     name: "MongoDB",
     logo: "assets/skills/logos/mongo.svg",

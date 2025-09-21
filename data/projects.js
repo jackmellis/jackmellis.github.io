@@ -1,5 +1,64 @@
 export default [
   {
+    name: "Flaunch",
+    logo: "assets/projects/logos/flaunch_logo.webp",
+    url: "https://flaunch.gg",
+    image: "assets/projects/screens/flaunch_screenshot.png",
+    yearsActive: "2024 - 2025",
+    description: `Flaunch is a blockchain launchpad protocol.
+    I architected and built the entire backend infrastructure from scratch, including a high-performance Node.js API with Express, implementing event-driven microservices architecture with Redis and BullMQ for job processing.
+    The system handles complex tokenomics calculations, automated liquidity management, and real-time price discovery mechanisms.
+    Performance optimization was a key focus, implementing caching strategies, database query optimization, and resource pre-fetching.
+    The platform supports multiple blockchain networks and integrates with various DeFi protocols.`,
+    skills: [
+      "ts",
+      "node",
+      "next",
+      "react",
+      "tailwind",
+      "web3",
+      "fp",
+      "html",
+      "css",
+      "babel",
+      "jest",
+      "git",
+      "docker",
+      "k8s",
+    ],
+  },
+  {
+    name: "Badger",
+    logo: "assets/projects/logos/badger_logo.webp",
+    image: "assets/projects/screens/badger_screenshot.png",
+    url: "https://usebadger.dev",
+    yearsActive: "2025",
+    description: `Badger is a comprehensive achievement-tracking platform that gamifies user engagement across web applications.
+    I designed and built the complete full-stack solution from the ground up, including a robust Node.js API with Express, PostgreSQL with Prisma ORM, and a React dashboard with Next.js.
+    The platform features real-time achievement notifications, customizable badge systems, progress tracking analytics, and social sharing capabilities.
+    I implemented a flexible rule engine that allows developers to easily define custom achievement criteria and integrate with their existing applications through a well-documented REST API.
+    The system includes advanced features like achievement categories, rarity levels, user leaderboards, and comprehensive analytics dashboards for both end-users and administrators.
+    Built with scalability in mind, the architecture supports high concurrent users and includes automated testing, CI/CD pipelines, and containerized deployment with Docker and Railway.`,
+    skills: [
+      "ts",
+      "html",
+      "css",
+      "react",
+      "tailwind",
+      "node",
+      "next",
+      "babel",
+      "jest",
+      "git",
+      "postgres",
+      "prisma",
+      "docker",
+      "onion",
+      "solid",
+      "fp",
+    ],
+  },
+  {
     name: "NFTX V3",
     logo: "assets/projects/logos/nftx_v3_logo.svg",
     url: "https://v3.nftx.io",
